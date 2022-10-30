@@ -1,0 +1,36 @@
+/* background: #212121; Заголовки сторінки*/
+/*  background: #757575; Вторичний колір тексту*/
+/*background: #2196F3; Блакитний колір*/
+/* rgba(255, 255, 255, 1) Білий колір */
+/* rgba(47, 48, 58, 1) Колір Героя та підвалу ;
+/* #FFFFFF Основний колір сторінки */
+
+body {
+    color: #757575 ;
+    background-color: #fff;
+}
+
+.logo {
+    color: #000;
+}
+
+.list {
+    list-style: none;
+}
+
+.site-nav{
+    color:#212121 ;
+}
+
+.site-nav:hover, .site-nav:focus {
+    color: #2196F3;
+}
+
+.socials{
+    color:#757575; 
+}
+
+.socials:hover {
+    color:#2196F3;
+}
+
