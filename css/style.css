@@ -6,31 +6,152 @@
 /* #FFFFFF Основний колір сторінки */
 
 body {
+    font-family: Roboto, sans-serif;
     color: #757575 ;
     background-color: #fff;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;  
+    letter-spacing: 0.03em;
 }
 
-.logo {
-    color: #000;
+button {
+    cursor: pointer;
 }
 
 .list {
     list-style: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 
+{ color: #212121; }
+
+/* Логотип */
+.logo {
+    color: #000;
+    
+    text-decoration: none;
+    
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+}
+
+.logo-web {
+    color: #2196F3;
+}
+
+
+/* Навігація */
 .site-nav{
     color:#212121 ;
+   
+    text-decoration: none;
+    
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 
 .site-nav:hover, .site-nav:focus {
     color: #2196F3;
 }
 
+/* Контакти */
 .socials{
-    color:#757575; 
+    color:#757575;
+    
+    text-decoration: none;
+    
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 
 .socials:hover {
     color:#2196F3;
 }
 
+/* Герой */
+
+.hero-title{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.360;  
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase
+}
+
+.hero-button {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+}
+
+/* Наші переваги и Наша команда*/
+
+.features-title { 
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    
+}
+
+.team {
+    font-size: 16px;
+    line-height: 1.18;
+}
+
+.team-name { 
+    font-weight: 700; 
+}
+
+
+.footer-address {
+    color: #FFFFFF;
+    background-color: #2F303A;
+
+}
+
+.footer-address:hover, .footer-address:focus {
+    color: #2196F3;
+   
+}
+
+.footer-socials {
+    color: #757575;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;   
+    letter-spacing: 0.03em;
+    text-decoration: none;
+
+}
+
+.footer-socials:hover, .footer-socials:focus {
+   color: #2196F3;
+}
