@@ -1,14 +1,23 @@
-/* background: #212121; Заголовки сторінки*/
-/*  background: #757575; Вторичний колір тексту*/
+/* background: #212121; Заголоки*/
+/*  background: #757575; Основний колір тексту*/
 /*background: #2196F3; Блакитний колір*/
-/* rgba(255, 255, 255, 1) Білий колір */
-/* rgba(47, 48, 58, 1) Колір Героя та підвалу ;
+/* #FFFFFF Білий колір колір заголовка героя */
 /* #FFFFFF Основний колір сторінки */
+
+:root {
+    --title: #212121;
+    --hover-focus-color:#2196F3;
+    --backgraund-body: #FFFFFF;
+    --text-page: #757575;
+    --hero-text: #FFFFFF;
+    --logo-color:#000000; 
+    --footer-backgraund: #2F303A;
+}
 
 body {
     font-family: Roboto, sans-serif;
-    color: #757575 ;
-    background-color: #fff;
+    color: var(--text-page);
+    background-color: var(--backgraund-body);
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -31,11 +40,11 @@ h3,
 h4,
 h5,
 h6 
-{ color: #212121; }
+{ color: var(--title) }
 
 /* Логотип */
 .logo {
-    color: #000;
+    color: var(--logo-color);
     
     text-decoration: none;
     
@@ -46,13 +55,13 @@ h6
 }
 
 .logo-web {
-    color: #2196F3;
+    color: var(--hover-focus-color);
 }
 
 
 /* Навігація */
 .site-nav{
-    color:#212121 ;
+    color: var(--title) ;
    
     text-decoration: none;
     
@@ -63,12 +72,12 @@ h6
 }
 
 .site-nav:hover, .site-nav:focus {
-    color: #2196F3;
+    color: var(--hover-focus-color);
 }
 
 /* Контакти */
 .socials{
-    color:#757575;
+    color:var(--text-page);
     
     text-decoration: none;
     
@@ -78,13 +87,14 @@ h6
     letter-spacing: 0.02em;
 }
 
-.socials:hover {
-    color:#2196F3;
+.socials:hover, .socials:focus {
+    color: var(--hover-focus-color);
 }
 
 /* Герой */
 
 .hero-title{
+    color:var(--hero-text);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.360;  
@@ -128,20 +138,20 @@ h6
     font-weight: 700; 
 }
 
-
+ /* Підвал */
 .footer-address {
-    color: #FFFFFF;
-    background-color: #2F303A;
+    color: var(--hero-text);
+    background-color: var(--footer-backgraund);
 
 }
 
 .footer-address:hover, .footer-address:focus {
-    color: #2196F3;
+    color: var(--hover-focus-color);
    
 }
 
 .footer-socials {
-    color: #757575;
+    color:var(--text-page);
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -153,5 +163,40 @@ h6
 }
 
 .footer-socials:hover, .footer-socials:focus {
-   color: #2196F3;
+   color: var(--hover-focus-color);
+}
+
+/* Портфоліо */
+
+/* Фільрт */
+.filter-button {
+    color: var(--title);
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    
+    cursor: pointer;
+}
+
+.filter-button:hover, .filter-button:focus {
+    color: var(--hero-text);
+    background-color: var(--hover-focus-color);
+}
+
+/* Портфоліо */
+.portfolio-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+
+}
+
+.portfolio-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
 }
