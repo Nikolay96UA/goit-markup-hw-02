@@ -63,7 +63,7 @@ button {
   color: var(--hover-focus-color);
 }
 
-.site-nav:active {
+.active-page {
   color: var(--hover-focus-color);
 }
 
