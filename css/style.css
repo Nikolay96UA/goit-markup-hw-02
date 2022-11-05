@@ -12,6 +12,7 @@
   --hero-text: #ffffff;
   --logo-color: #000000;
   --footer-backgraund: #2f303a;
+  --backgraund-section: #f5f4fa;
 }
 
 body {
@@ -84,10 +85,12 @@ button {
 }
 
 /* Герой */
+.hero {
+  background-color: var(--footer-backgraund);
+}
 
 .hero-title {
   color: var(--hero-text);
-  background-color: #2f303a;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -108,6 +111,10 @@ button {
 
 /* Наші переваги и Наша команда*/
 
+.features-section {
+  visibility: hidden;
+}
+
 .features-title {
   color: var(--title);
   font-weight: 700;
@@ -120,6 +127,10 @@ button {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+}
+
+.team-section {
+  background-color: var(--backgraund-section);
 }
 
 .team {
@@ -135,9 +146,13 @@ button {
 }
 
 /* Підвал */
+
+.footer {
+  background-color: var(--footer-backgraund);
+}
+
 .footer-address {
   color: var(--hero-text);
-  background-color: var(--footer-backgraund);
   font-style: normal;
 }
 
@@ -184,11 +199,7 @@ button {
 
 /* Портфоліо */
 .portfolio-title {
-  color: var(--title);
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
+  visibility: hidden;
 }
 
 .portfolio-text {
