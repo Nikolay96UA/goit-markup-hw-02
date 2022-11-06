@@ -109,10 +109,15 @@ button {
   letter-spacing: 0.06em;
 }
 
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--hover-focus-color);
+}
+
 /* Наші переваги и Наша команда*/
 
 .features-section {
-  visibility: hidden;
+  display: none;
 }
 
 .features-title {
@@ -131,6 +136,10 @@ button {
 
 .team-section {
   background-color: var(--backgraund-section);
+}
+
+.team-container {
+  background-color: var(--backgraund-body);
 }
 
 .team {
@@ -154,6 +163,7 @@ button {
 .footer-address {
   color: var(--hero-text);
   font-style: normal;
+  text-decoration: none;
 }
 
 .footer-address:hover,
@@ -181,6 +191,7 @@ button {
 /* Фільрт */
 .filter-button {
   color: var(--title);
+  background-color: var(--backgraund-section);
 
   font-family: 'Roboto', sans-serif;
   font-style: normal;
@@ -198,8 +209,15 @@ button {
 }
 
 /* Портфоліо */
+.portfolio {
+  display: none;
+}
+
 .portfolio-title {
-  visibility: hidden;
+  color: var(--title);
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
 }
 
 .portfolio-text {
